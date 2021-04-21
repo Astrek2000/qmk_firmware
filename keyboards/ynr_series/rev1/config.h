@@ -13,10 +13,10 @@
 #define MATRIX_ROWS 6
 #define MATRIX_COLS 19
 
-#define MATRIX_ROW_PINS  {PB_11, PB_10, PB_1, PB_0, PA_7, PA_6}      //Mention the pins you used of the MCU for rows
-#define MATRIX_COL_PINS  {PB_12, PB_13, PB_14, PB_15, PA_8, PA_9, PA_10, PA_11, PA_12, PA_15, PB_3, PB_4, PB_5, PB_6, PB_7, PB_8, PB_9, PC_14, PC_15}      //Mention the pins you used of the MCU for cols
+#define MATRIX_ROW_PINS  {B11, B10, B1, B0, A7, A6}      //Mention the pins you used of the MCU for rows
+#define MATRIX_COL_PINS  {B12, B13, B14, B15, A8, A9, A10, A11, A12, A15, B3, B4, B5, B6, B7, B8, B9, C14, C15}      //Mention the pins you used of the MCU for cols
 //#define MATRIX_IO_DELAY {}      //Delay unit = microseconds; delay between changing matrix pin state and reading values
-#define UNUSED_PINS {PA_5, PA_4, PA_3, PA_2, PA_1, PA_0, PC_13}            //If you have unsed pins of the MCU
+#define UNUSED_PINS {A5, A4, A3, A2, A1, C13}            //If you have unsed pins of the MCU
 //#define MATRIX_HAS_GHOST        //Whoa... key Ghosting in this day and age?
 #define DIODE_DIRECTION COL2ROW   //Diode direction. Check where the black mark/any mark of a diode is facing
 //#define DIRECT_PINS { { rows }, { cols } }    //A matrix where 1 switch is assigned to on pin of MCU
@@ -31,12 +31,13 @@
 //#define B7_AUDIO
 
 //Backlighting
-#define BACKLIGHT_PIN              		 //Pin of MCU assigned to backlight
+/*#define BACKLIGHT_PIN           		 //Pin of MCU assigned to backlight
 #define BACKLIGHT_LEVELS 10        		 //Backlight Lvls
 #define BACKLIGHT_BREATHING        		 //Backlight breathing. Want some more words to define? Just define and it works no values to be assigned
-#define BREATHING_PERIOD          		 //Unit = seconds; 1 breath length
-#define DEBOUNCE 5                 		 /*Mechanical bounce compensator. 
- 
+#define BREATHING_PERIOD 2        		 //Unit = seconds; 1 breath length
+#define DEBOUNCE 5                 		 //Mechanical bounce compensator. 
+*/
+
 //Misc.                                    	  *E.g. - *without debounce* If you press A in notepad, expecting a single A but instead get mutilple As. Like - AAAAAAA */
 #define LOCKING_SUPPORT_ENABLE    		 //Mechanical locking support. Not needed if you use the locking keymaps.
 #define LOCKING_RESYNC_ENABLE      		 //Tries to keep switch state consistent with keyboard LED state
