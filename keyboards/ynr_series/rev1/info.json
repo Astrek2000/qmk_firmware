@@ -21,7 +21,7 @@
 
     "layouts": {
         "LAYOUT_chungus_space": {
-            "key_count": 107,
+            "key_count": 105,
             "layout": [
                 { "label": "Esc", "x": 0, "y": 0 },
                 { "label": "F1", "x": 1, "y": 0 },
@@ -133,7 +133,7 @@
      },
         
         "LAYOUT_smol_space": {
-            "key_count": 105,
+            "key_count": 107,
             "layout": [
                 { "label": "Esc", "x": 0, "y": 0 },
                 { "label": "F1", "x": 1, "y": 0 },

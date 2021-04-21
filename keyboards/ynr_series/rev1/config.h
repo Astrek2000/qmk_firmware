@@ -13,8 +13,8 @@
 #define MATRIX_ROWS 6
 #define MATRIX_COLS 19
 
-#define MATRIX_ROWS_PINS  {PB_11, PB_10, PB_1, PB_0, PA_7, PA_6}      //Mention the pins you used of the MCU for rows
-#define MATRIX_COLS_PINS  {PB_12, PB_13, PB_14, PB_15, PA_8, PA_9, PA_10, PA_11, PA_12, PA_15, PB_3, PB_4, PB_5, PB_6, PB_7, PB_8, PB_9, PC_14, PC_15}      //Mention the pins you used of the MCU for cols
+#define MATRIX_ROW_PINS  {PB_11, PB_10, PB_1, PB_0, PA_7, PA_6}      //Mention the pins you used of the MCU for rows
+#define MATRIX_COL_PINS  {PB_12, PB_13, PB_14, PB_15, PA_8, PA_9, PA_10, PA_11, PA_12, PA_15, PB_3, PB_4, PB_5, PB_6, PB_7, PB_8, PB_9, PC_14, PC_15}      //Mention the pins you used of the MCU for cols
 //#define MATRIX_IO_DELAY {}      //Delay unit = microseconds; delay between changing matrix pin state and reading values
 #define UNUSED_PINS {PA_5, PA_4, PA_3, PA_2, PA_1, PA_0, PC_13}            //If you have unsed pins of the MCU
 //#define MATRIX_HAS_GHOST        //Whoa... key Ghosting in this day and age?
