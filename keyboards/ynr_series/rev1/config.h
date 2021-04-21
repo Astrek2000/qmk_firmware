@@ -31,12 +31,14 @@
 //#define B7_AUDIO
 
 //Backlighting
-/*#define BACKLIGHT_PIN           		 //Pin of MCU assigned to backlight
+#define BACKLIGHT_PIN           		 //Pin of MCU assigned to backlight
+#ifdef BACKLIGHT_PIN
 #define BACKLIGHT_LEVELS 10        		 //Backlight Lvls
 #define BACKLIGHT_BREATHING        		 //Backlight breathing. Want some more words to define? Just define and it works no values to be assigned
 #define BREATHING_PERIOD 2        		 //Unit = seconds; 1 breath length
 #define DEBOUNCE 5                 		 //Mechanical bounce compensator. 
-*/
+#endif
+
 
 //Misc.                                    	  *E.g. - *without debounce* If you press A in notepad, expecting a single A but instead get mutilple As. Like - AAAAAAA */
 #define LOCKING_SUPPORT_ENABLE    		 //Mechanical locking support. Not needed if you use the locking keymaps.
@@ -45,12 +47,12 @@
 //#define FORCE_NKRO           				//Forces NKRO on during keyboard startup regardless of EEPROM setting
 
 //Power and polling
-#define USB_MAX_POWER_CONSUMPTION 900     //Sets max power to the board over USB; Unit = mA(milliAmps)
+#define USB_MAX_POWER_CONSUMPTION 500     //Sets max power to the board over USB; Unit = mA(milliAmps)
 #define USB_POLLING_INTERVAL_MS 10        //Sets the USB polling rate; Unit = ms(milliSecond)
 //#define USB_SUSPEND_WAKEUP_DELAY 200      //Number of milliseconde to pause after sending a wakeup packet
 
 //RGB
-//#define RGB_DI_PIN             				//MCU pin to which Neopixel RGB DI(data in) pin is connected
+#define RGB_DI_PIN  A0          				//MCU pin to which Neopixel RGB DI(data in) pin is connected
 #ifdef RGB_DI_PIN              				//if RGB_DI_PIN is defined then the below happend till the command ends
 #define RGBLIGHT_ANIMATIONS    				//Enables RGB animations; No value needed
 //#define RGBLIGHT_LAYERS      				//Define lighting layers that can be toggled on or off
