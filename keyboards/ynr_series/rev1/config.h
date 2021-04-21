@@ -5,7 +5,7 @@
 // USB device descriptor parameter
 #define VENDOR_ID    0xABCD      //vid 
 #define PRODUCT_ID   0x6969      //pid    
-#define DEVICE_VER   0x02    	 //Revision or Device Version
+#define DEVICE_VER   0x0002    	 //Revision or Device Version
 #define MANUFACTURER   Prozekt   //It is what it says it is.
 #define PRODUCT        YNR_Board // Seriously?
 

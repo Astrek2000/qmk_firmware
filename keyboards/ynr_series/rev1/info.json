@@ -5,8 +5,7 @@
     "width": 20,
     "url": "",
     "debounce": 5,
-    "processor": "STM32F103C8T6", 
-    "board": "blue pill",
+    "processor": "STM32F103", 
     "diode_direction": "COL2ROW",
 
     "features": {
@@ -18,8 +17,7 @@
         "rgblight": true,
         "unicode": true,
 
-    }
-}
+    },
 
     "layouts": {
         "LAYOUT_chungus_space": {
@@ -245,3 +243,4 @@
             ]
         }
     }   
+}
