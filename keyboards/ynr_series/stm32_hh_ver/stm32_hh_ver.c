@@ -1,0 +1,1 @@
+#include "stm32_hh_ver.h"

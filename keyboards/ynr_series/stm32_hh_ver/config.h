@@ -5,7 +5,7 @@
 // USB device descriptor parameter
 #define VENDOR_ID    0xABCD      //vid 
 #define PRODUCT_ID   0x6969      //pid    
-#define DEVICE_VER   0x0002    	 //Revision or Device Version
+#define DEVICE_VER   0x0001    	 //Revision or Device Version
 #define MANUFACTURER   Prozekt   //It is what it says it is.
 #define PRODUCT        YNR_Board // Seriously?
 
@@ -13,13 +13,14 @@
 #define MATRIX_ROWS 6
 #define MATRIX_COLS 19
 
-#define MATRIX_ROW_PINS  {B11, B10, B1, B0, A7, A6}      //Mention the pins you used of the MCU for rows
-#define MATRIX_COL_PINS  {B12, B13, B14, B15, A8, A9, A10, A11, A12, A15, B3, B4, B5, B6, B7, B8, B9, C14, C15}      //Mention the pins you used of the MCU for cols
+#define MATRIX_ROW_PINS  {B3, B5, B6, B7, B8, B9}      //Mention the pins you used of the MCU for rows
+#define MATRIX_COL_PINS  {B11, B10, B1, B0, A7, A6, A5, A4, A3, A2, A1, A0, C15, C14, C13, A11, A12, A15, B4}      //Mention the pins you used of the MCU for cols
 //#define MATRIX_IO_DELAY {}      //Delay unit = microseconds; delay between changing matrix pin state and reading values
-#define UNUSED_PINS {A5, A4, A3, A2, A1, C13}            //If you have unsed pins of the MCU
+#define UNUSED_PINS {A10, A9, A8, B14, B13, B12}            //If you have unsed pins of the MCU
 //#define MATRIX_HAS_GHOST        //Whoa... key Ghosting in this day and age?
 #define DIODE_DIRECTION COL2ROW   //Diode direction. Check where the black mark/any mark of a diode is facing
 //#define DIRECT_PINS { { rows }, { cols } }    //A matrix where 1 switch is assigned to on pin of MCU
+#define DEBOUNCE 5                 		 //Mechanical bounce compensator. 
 
 //Audio
 //#define AUDIO_VOICES
@@ -36,7 +37,6 @@
 #define BACKLIGHT_LEVELS 10        		 //Backlight Lvls
 #define BACKLIGHT_BREATHING        		 //Backlight breathing. Want some more words to define? Just define and it works no values to be assigned
 #define BREATHING_PERIOD 2        		 //Unit = seconds; 1 breath length
-#define DEBOUNCE 5                 		 //Mechanical bounce compensator. 
 #endif
 
 
@@ -52,7 +52,7 @@
 //#define USB_SUSPEND_WAKEUP_DELAY 200      //Number of milliseconde to pause after sending a wakeup packet
 
 //RGB
-#define RGB_DI_PIN  A0          				//MCU pin to which Neopixel RGB DI(data in) pin is connected
+#define RGB_DI_PIN  B15          				//MCU pin to which Neopixel RGB DI(data in) pin is connected
 #ifdef RGB_DI_PIN              				//if RGB_DI_PIN is defined then the below happend till the command ends
 #define RGBLIGHT_ANIMATIONS    				//Enables RGB animations; No value needed
 //#define RGBLIGHT_LAYERS      				//Define lighting layers that can be toggled on or off
