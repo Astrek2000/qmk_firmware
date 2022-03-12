@@ -23,14 +23,14 @@
 
 
 
-//Backlighting
+/*Backlighting
 #define BACKLIGHT_PIN           		 //Pin of MCU assigned to backlight
 #ifdef BACKLIGHT_PIN
 #define BACKLIGHT_LEVELS 10        		 //Backlight Lvls
 #define BACKLIGHT_BREATHING        		 //Backlight breathing. Want some more words to define? Just define and it works no values to be assigned
 #define BREATHING_PERIOD 2        		 //Unit = seconds; 1 breath length 
 #endif
-
+*/
 
 //Misc.                                    	  
 #define DEBOUNCE 5                 		 //Mechanical bounce compensator. *E.g. - *without debounce* If you press A in notepad, expecting a single A but instead get mutilple As. Like - AAAAAAA */
@@ -44,12 +44,24 @@
 //RGB
 #define RGB_DI_PIN  E2         				//MCU pin to which Neopixel RGB DI(data in) pin is connected
 #ifdef RGB_DI_PIN              				//if RGB_DI_PIN is defined then the below happend till the command ends
-#define RGBLIGHT_ANIMATIONS    				//Enables RGB animations; No value needed
+//#define RGBLIGHT_ANIMATIONS    				//Enables RGB animations; No value needed
+#define RGBLIGHT_EFFECT_STATIC_GRADIENT
+#define RGBLIGHT_EFFECT_RGB_TEST
+#define RGBLIGHT_EFFECT_BREATHING
+#define RGBLIGHT_EFFECT_SNAKE
+#define RGBLIGHT_EFFECT_RAINBOW_MOOD
+#define RGBLIGHT_EFFECT_KNIGHT
 
 #define RGBLED_NUM  107  						 //Number of LEDs
+#define RGB_LIMIT_VAL 200                        //Max brightness value 
 #define RGBLIGHT_HUE_STEP 5   				     //Units to step when in/decreasing hue
-#define RGBLIGHT_SAT_STEP 15   					 //Units to step when in/decreasing saturation
-#define RGBLIGHT_VAL_STEP 12   					 //Units to step when in/decreasing value
+#define RGBLIGHT_SAT_STEP 40  					 //Units to step when in/decreasing saturation
+#define RGBLIGHT_VAL_STEP 40  					 //Units to step when in/decreasing value
+#define RGBLIGHT_DEFAULT_HUE 159
+#define RGBLIGHT_DEFAULT_VAL 200
+#define RGBLIGHT_DEFAULT_SAT 002
+
+#define RGBLIGHT_LAYERS                          //For lock keys to define their state 
 #endif                         					 //End of ifdef
 //#define RGBW   								 //Enables RGBW LED support
 
