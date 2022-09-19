@@ -43,8 +43,6 @@ enum custom_keycodes {
   ADJUST
 };
 
-#define KC_ KC_TRNS
-
 #define SE_YEN ALGR(SE_6) //isn't in the swedish_keymap.h
 #define KC_CATDEL LCTL(LALT(KC_DEL)) // Ctrl alt del
 #define KC_TSKMGR LCTL(S(KC_ESC)) // Ctrl shift esc
@@ -160,7 +158,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_ADJUST] = LAYOUT(
   //,--------+--------+--------+--------+--------+--------.                          ,--------+--------+--------+--------+--------+--------.
-      _______, GAMING , DVORAK , COLEMAK , QWERTY , RESET,                           _______, _______, _______, _______, KC_PWR,    RESET,
+      _______, GAMING , DVORAK , COLEMAK , QWERTY , QK_BOOT,                         _______, _______, _______, _______, KC_PWR,    QK_BOOT,
   //|--------+--------+--------+--------+--------+--------|                          |--------+--------+--------+--------+--------+--------|
       _______, _______, _______,LGUI(KC_UP),_______,LALT(KC_F4),                       _______, RGB_TOG, RGB_MOD, RGB_HUI, RGB_SAI, RGB_VAI,
   //|--------+--------+--------+--------+--------+--------|                          |--------+--------+--------+--------+--------+--------|

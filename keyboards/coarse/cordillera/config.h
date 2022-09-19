@@ -17,13 +17,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-/* USB Device descriptor parameter */
-#define VENDOR_ID       0x434B // CK for Coarse Keys
-#define PRODUCT_ID      0x1401 // '20 - 001
-#define DEVICE_VER      0x0001 // Revision prototype
-#define MANUFACTURER    Coarse
-#define PRODUCT         Cordillera
-
 /* key matrix size */
 #define MATRIX_ROWS 5
 #define MATRIX_COLS 16
@@ -35,6 +28,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define LED_NUM_LOCK_PIN B0
 #define LED_CAPS_LOCK_PIN A1
 #define LED_SCROLL_LOCK_PIN A0
+#define LED_PIN_ON_STATE 0
 
 #define BACKLIGHT_PIN           A8
 #define BACKLIGHT_PWM_DRIVER    PWMD1
@@ -70,5 +64,3 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define NO_ACTION_LAYER
 //#define NO_ACTION_TAPPING
 //#define NO_ACTION_ONESHOT
-//#define NO_ACTION_MACRO
-//#define NO_ACTION_FUNCTION

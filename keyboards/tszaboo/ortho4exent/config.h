@@ -19,13 +19,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "config_common.h"
 
-/* USB Device descriptor parameter */
-#define VENDOR_ID       0x5453 // "TS"
-#define PRODUCT_ID      0x7934 // "O4"
-#define DEVICE_VER      0x0001
-#define MANUFACTURER    tszaboo
-#define PRODUCT         ortho4exent
-
 /* key matrix size */
 #define MATRIX_ROWS 5
 #define MATRIX_COLS 15
@@ -43,11 +36,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_ROW_PINS { B0, B1, D4, D7, B4 }
 /*                         0   1   2   3   4   5   6   7   8   9  10  11  12  13  14*/
 #define MATRIX_COL_PINS { F0, F1, F4, F5, F6, F7, C7, D6, D5, D3, D2, D1, B7, B3, B2 }
-#define UNUSED_PINS
 #define LED_CAPS_LOCK_PIN E6
 
 /* COL2ROW, ROW2COL*/
-#define DIODE_DIRECTION COL2ROW
+#define DIODE_DIRECTION ROW2COL
 
 /*
  * Split Keyboard specific options, make sure you have 'SPLIT_KEYBOARD = yes' in your rules.mk, and define SOFT_SERIAL_PIN.
@@ -60,7 +52,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
  #define RGB_DI_PIN B6
  #ifdef RGB_DI_PIN
-   #define RGBLED_NUM 16
+   #define RGBLED_NUM 18
+
    #define RGBLIGHT_HUE_STEP 8
    #define RGBLIGHT_SAT_STEP 8
    #define RGBLIGHT_VAL_STEP 8
@@ -126,10 +119,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define NO_ACTION_LAYER
 //#define NO_ACTION_TAPPING
 //#define NO_ACTION_ONESHOT
-
-/* disable these deprecated features by default */
-#define NO_ACTION_MACRO
-#define NO_ACTION_FUNCTION
 
 /* Bootmagic Lite key configuration */
 //#define BOOTMAGIC_LITE_ROW 0
